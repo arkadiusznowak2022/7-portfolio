@@ -1,0 +1,63 @@
+#techno-cont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(254, 225, 190);
+  margin: 50px auto;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#techno-cont i {
+  font-size: 100px;
+  margin: 0 20px;
+}
+
+#techno-cont .ajax-icon {
+  height: 95px;
+}
+
+#techno-cont .jquery-icon {
+  height: 110px;
+}
+
+#techno-cont .ts-icon {
+  height: 90px;
+  margin: 0 20px;
+}
+
+#techno-cont i:hover,
+#techno-cont img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#techno-cont .techno-desc {
+  position: absolute;
+  font-size: 40px;
+  font-family: 'Titillium Web', sans-serif;
+  opacity: 0;
+}
+
+#techno-cont .techno-desc.active {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+@media (max-width: 650px) {
+  #techno-cont {
+    width: 95%;
+  }
+
+  #techno-cont .jquery-icon {
+    margin-left: 10px;
+  }
+
+  #techno-cont .ajax-icon {
+    margin-left: 10px;
+  }
+}

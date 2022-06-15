@@ -1,0 +1,12 @@
+#about {
+  width: calc(200px + 40vw);
+  margin: 50px auto;
+  font-family: 'Akshar', sans-serif;
+}
+
+#about p {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: justify;
+  font-size: 30px;
+  line-height: 50px;
+}

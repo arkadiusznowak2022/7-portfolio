@@ -1,0 +1,22 @@
+#contact p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+#contact .icons {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#contact .icons i {
+  font-size: 80px;
+  margin: 0 20px;
+  color: rgb(125, 125, 125);
+}
+
+#contact .icons i:hover {
+  color: rgb(0, 0, 0);
+  transform: rotate(10deg);
+  transition: 0.3s;
+}

@@ -1,0 +1,29 @@
+@import './styles/header.css';
+@import './styles/nav.css';
+@import './styles/section-about.css';
+@import './styles/section-projects.css';
+@import './styles/section-technologies.css';
+@import './styles/section-experience.css';
+@import './styles/contact.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section,
+footer {
+  padding: 10vh 0 20vh 0;
+}
+
+h2 {
+  font-size: 80px;
+  font-family: 'Smooch', cursive;
+  text-align: center;
+  margin-bottom: 40px;
+}
