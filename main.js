@@ -178,5 +178,6 @@ function init() {
   window.scrollTo(0, 0);
   if (window.innerWidth < 1200) title.textContent = 'Arkadiusz Nowak';
   resizeTechnoElements();
+  document.body.style.zoom = '80%';
 }
 init();
