@@ -88,6 +88,7 @@ projects.forEach((el) => {
     curProj = project;
     project.classList.add('opened');
     overlay.classList.add('opened');
+    resizeProjectElement();
   });
 });
 
@@ -95,6 +96,8 @@ overlay.addEventListener('click', function (e) {
   e.stopPropagation();
   curProj.classList.remove('opened');
   overlay.classList.remove('opened');
+  curProj.style.zoom = '1';
+  curProj = '';
 });
 
 ////////////////////////
@@ -178,6 +181,21 @@ function init() {
   window.scrollTo(0, 0);
   if (window.innerWidth < 1200) title.textContent = 'Arkadiusz Nowak';
   resizeTechnoElements();
-  document.body.style.zoom = '80%';
+  resizeProjectElement();
 }
 init();
+
+///////////////////////////
+//// RESIZE OPEN PROJECT
+
+window.addEventListener('resize', resizeProjectElement);
+
+function resizeProjectElement() {
+  if (!curProj) return;
+
+  if (window.innerWidth < 600) {
+    curProj.style.zoom = `${window.innerWidth / 600}`;
+  } else if (curProj.style.zoom !== '1') {
+    curProj.style.zoom = '1';
+  }
+}

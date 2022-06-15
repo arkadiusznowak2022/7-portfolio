@@ -9,6 +9,7 @@
   height: 600px;
   border-radius: 50%;
   position: relative;
+  zoom: 80%;
 }
 
 #techno-cont i {
@@ -51,6 +52,7 @@
 @media (max-width: 650px) {
   #techno-cont {
     width: 95%;
+    zoom: 100%;
   }
 
   #techno-cont .jquery-icon {
@@ -60,4 +62,7 @@
   #techno-cont .ajax-icon {
     margin-left: 10px;
   }
+}
+
+@media (max-width: 650px) {
 }

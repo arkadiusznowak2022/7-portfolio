@@ -45,6 +45,17 @@
   font-weight: 700;
 }
 
+.project a {
+  justify-self: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.project a:hover {
+  color: rgb(125, 125, 125);
+}
+
 /* Open project */
 
 .project-desc {
@@ -104,8 +115,21 @@
 
 .project.opened p {
   grid-column: 1/3;
+  text-align: justify;
 }
 
-.project.opened a {
-  justify-self: center;
+/* Portfolio exception */
+
+.project.portfolio.opened {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
 }
+/* 
+@media (max-width: 650px) {
+  .project.opened {
+    zoom: 70%;
+  }
+} */

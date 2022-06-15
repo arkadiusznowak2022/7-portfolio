@@ -1,5 +1,10 @@
 #experience {
   background-color: rgb(125, 125, 125);
+  padding-top: 50px;
+}
+
+#experience h2 {
+  margin-bottom: 30px;
 }
 
 .slider {
@@ -40,7 +45,7 @@
 
 .slide {
   position: absolute;
-  top: 10px;
+  top: 0px;
   margin: 10px;
   transition: 1s;
 
@@ -62,6 +67,7 @@
 .slide .text-cont {
   flex-basis: 45%;
   margin-right: 20px;
+  zoom: 80%;
 }
 
 .slide .text-cont h3 {
@@ -101,13 +107,10 @@
 
 @media (max-width: 1400px) {
   .slide img {
-    width: 100%;
-    object-fit: contain;
-    height: auto;
+    width: 95%;
+    height: 350px;
   }
-  img[alt='front-end'] {
-    height: 400px;
-  }
+
   .slide .text-cont {
     flex-basis: 100%;
   }
@@ -116,6 +119,9 @@
 @media (max-width: 800px) {
   .slider {
     width: 100%;
+  }
+  .slide img {
+    height: 300px;
   }
 }
 
