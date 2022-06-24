@@ -14,6 +14,28 @@
 }
 
 /* Project */
+.time-table-event {
+  width: 300px;
+  height: 285px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+
+  border: 2px dashed rgb(210, 210, 210);
+  color: rgb(210, 210, 210);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.time-table-event i {
+  font-size: 80px;
+  color: rgb(137, 137, 137);
+}
 
 .project {
   width: 300px;
@@ -83,7 +105,9 @@
 
 .project.opened {
   position: fixed;
-  top: 20vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 500px;
   height: 450px;
   box-shadow: 20px 20px 10px rgb(0, 0, 0);
@@ -99,7 +123,6 @@
 }
 
 .project:hover.opened {
-  transform: translateY(0px);
   cursor: default;
 }
 
@@ -128,8 +151,3 @@
   gap: 10%;
 }
 /* 
-@media (max-width: 650px) {
-  .project.opened {
-    zoom: 70%;
-  }
-} */
